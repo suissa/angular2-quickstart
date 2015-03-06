@@ -1,0 +1,23 @@
+<!-- index.html -->
+<html>
+  <head>
+    <title>Angular 2 Quickstart</title>
+    <script src="dist/es6-shim.js"></script>
+  </head>
+  <body>
+    <h1>Angular 2 Quickstart</h1>
+    <!-- O component app criado em app.es6 -->
+    <meu-app></meu-app>
+    <script>
+      // Sobrescreva os caminho para carregar os arquivos
+      System.paths = {
+        'angular2/*':'/angular2/*.js', // Angular
+        'rtts_assert/*': '/rtts_assert/*.js', //Runtime assertions
+        'app': 'app.es6' // O meu-app component
+      };
+
+      // Pontapé inicial
+      System.import('app');
+    </script>
+  </body>
+</html>
