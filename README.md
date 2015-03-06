@@ -25,7 +25,7 @@ import {Component, Template, bootstrap} from 'angular2/angular2';
 
 Nesse momento estamos importando 3 módulos (Component, Template, bootstrap) do Angular2, utilizando a sintaxe de módulos do ES6.
 
-Depois precisamos definir um componente, nesse exemplo `my-app`.
+Depois precisamos definir um componente, nesse exemplo `meu-app`.
 A UI é representada e estruturada por componentes, um componente consiste de 2 partes:
 
 - Annotation section
@@ -34,7 +34,7 @@ A UI é representada e estruturada por componentes, um componente consiste de 2 
 ```js
 // Annotation section
 @Component({
-  selector: 'my-app'
+  selector: 'meu-app'
 })
 @Template({
   inline: '<h1>Hello {{ name }}</h1>'
@@ -58,14 +58,14 @@ A *@Template annotation* define o código HTML que representa o componente. Este
 
 ```js
 @Component({
-  selector: 'my-app' // Define a tag <my-app></my-app>
+  selector: 'meu-app' // Define a tag <meu-app></meu-app>
 })
 @Template({
   inline: '<h1>Hello {{ name }}</h1>' // Define um template inline para o  componente
 })
 ```
 
-A *annotation* acima especifica um tag HTML chamada `my-app` e um *template* `<h1>Hello {{ name }}</h1>` para essa tag.
+A *annotation* acima especifica um tag HTML chamada `meu-app` e um *template* `<h1>Hello {{ name }}</h1>` para essa tag.
 
 
 ###O template e o component controller
@@ -100,8 +100,6 @@ A função `bootstrap()` pega o *component* como um parâmetro, habilitando o *c
 
 Dentro da tag `head` do `index.html`, inclua o arquivo `es6-shim.js`. (O código do es6-shim deve carregar antes de qualquer código do aplicativo.) Em seguida, instanciar o componente `meu-app` no `body`.
 
-Inside the head tag of index.html, include the es6-shim.js file. (The es6-shim code must load before any application code.) Then instantiate the my-app component in the body.
-
 ```html
 <!-- index.html -->
 <html>
@@ -130,7 +128,7 @@ Para utilizarmos essa biblioteca e fazer nosso `app` funcionar adicione o seguin
 
 ```js
     <script>
-      // Sobrescreva os caminho para carregar os arquivos
+      // Sobrescreva os caminhos para carregar os arquivos
       System.paths = {
         'angular2/*':'/angular2/*.js', // Angular
         'rtts_assert/*': '/rtts_assert/*.js', //Runtime assertions
@@ -161,4 +159,6 @@ http-server                 # Cria um servidor em localhost:8080
 # Em um navegador, entre em localhost:8080/
 ```
 
-Não estranhe se demorar pois acontece, só de es6-sim é 1.2Mb. Se tiver problema pode rodar o `gulp` que ele removerá as pastas e instalará todas dependências novamente.    <h1>Angular 2 Quickstart</h1>    <h1>Angular 2 Quickstart</h1>    <h1>Angular 2 Quickstart</h1>    <h1>Angular 2 Quickstart</h1>    <h1></h1>
+![Resultado da renderização](https://cldup.com/Af5p4EHtyX-1200x1200.png)
+
+Não estranhe se demorar pois acontece, só de es6-sim é 1.2Mb. Se tiver problema pode rodar o `gulp` que ele removerá as pastas e instalará todas dependências novamente.
