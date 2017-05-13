@@ -1,4 +1,4 @@
-#Quickstart do Angular2
+# Quickstart do Angular2
 
 Vamos fazer o [quickstart do AngularJs 2.0](https://angular.io/docs/js/latest/quickstart.html), para iniciar vamos clonar o repositório desse *quickstart*.
 
@@ -16,7 +16,7 @@ touch app.es6
 
 A extensão `.es6` significa que o arquivo usa a sintxa do ES6, caso seu editor não suportar utilize `.js`.
 
-##Componentes
+## Componentes
 Agora abre o `app.es6` e inicie com o seguinte código:
 
 ```js
@@ -48,7 +48,7 @@ class MyAppComponent {
 ```
 
 
-###Component Annotation
+### Component Annotation
 
 Um *component annotation* fornece metadados sobre o componente. Uma *annotation* pode ser identificada por seu sinal de arroba (@).
 
@@ -68,7 +68,7 @@ A *@Template annotation* define o código HTML que representa o componente. Este
 A *annotation* acima especifica um tag HTML chamada `meu-app` e um *template* `<h1>Hello {{ name }}</h1>` para essa tag.
 
 
-###O template e o component controller
+### O template e o component controller
 
 O *component controller* é o suporte do *template*. Um *component controller* usa sintaxe de *class* do ES6.
 
@@ -86,7 +86,7 @@ Bem parecido com o que temos com o *scope* e as diretivas.
 
 O *template* acima usa a propriedade nome através da sintaxe de dupla chaves ({{...}}). O corpo do construtor atribui "Suissa" para a propriedade nome e o *template* renderiza, "Olá Suissa" em vez de "Olá {{name}}".
 
-##Inicialização
+## Inicialização
 
 Na parte inferior do `app.es6`, chame a função `bootstrap()` para carregar o seu novo componente em sua página:
 
@@ -96,7 +96,7 @@ bootstrap(MyAppComponent);
 
 A função `bootstrap()` pega o *component* como um parâmetro, habilitando o *component* (assim como qualquer *component* filho) para renderizar.
 
-##Declare o HTML
+## Declare o HTML
 
 Dentro da tag `head` do `index.html`, inclua o arquivo `es6-shim.js`. (O código do es6-shim deve carregar antes de qualquer código do aplicativo.) Em seguida, instanciar o componente `meu-app` no `body`.
 
@@ -116,7 +116,7 @@ Dentro da tag `head` do `index.html`, inclua o arquivo `es6-shim.js`. (O código
 </html>
 ```
 
-##Carregue o *component*
+## Carregue o *component*
 
 O último passo é carregar o módulo para o *component* `meu-app`. Para fazer isso, vamos utilizar a biblioteca do `System`, que está incluída no repositório do quickstart.
 
@@ -146,7 +146,7 @@ A propriedade `System.paths` acima especifica os caminhos para os seguintes mód
 - Assertions opcionais para verificação de tipos em *runtime*
 - O *component* a ser exibido na página
 
-##Rode um server local
+## Rode um server local
 
 Executar um servidor HTTP local, e entrar em `index.html`.
 
